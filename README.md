@@ -1,4 +1,4 @@
-Selenium + Pytest + Request + Allure /n
-Django + DRF to write API for CRUD /n
-Mock /n
+Selenium + Pytest + Request + Allure <\br>
+Django + DRF to write API for CRUD <\br>
+Mock <\br>
 HttpRunner
