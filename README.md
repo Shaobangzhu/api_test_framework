@@ -1,4 +1,4 @@
-Selenium + Pytest + Request + Allure
+Pytest + Request + Allure
 
 YAML for configuration
 
