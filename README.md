@@ -1,5 +1,7 @@
 Selenium + Pytest + Request + Allure
 
+YAML for configuration
+
 Django + DRF to write API for CRUD 
 
 Mock
