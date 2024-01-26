@@ -8,8 +8,8 @@ class GetConf:
                   encoding="utf-8") as env_file:
             self.env = yaml.load(env_file, Loader=yaml.FullLoader)
 
-    def get_username_password(self):
-        return self.env["username"], self.env["password"]
+    def get_username_password(self, user):
+        return self.env["user"][user]["username"], self.env["user"][user]["password"]
 
     def get_url(self):
         """
@@ -17,3 +17,6 @@ class GetConf:
         :return:
         """
         return self.env["url"]
+
+if __name__ == '__main__':
+    print(GetConf().get_username_password("jay"))
