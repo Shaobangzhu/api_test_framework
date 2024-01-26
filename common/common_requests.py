@@ -2,6 +2,7 @@ import requests
 from requests.adapters import HTTPAdapter
 
 from common.yaml_config import GetConf
+from common.deal_with_reponse import deal_with_res
 
 class Requests:
     def __init__(self, headers=None, timeout=10):
@@ -28,6 +29,7 @@ class Requests:
         :return:
         """
         res=self.s.get(self.url + url, params=params, timeout=self.timeout)
+        deal_with_res(params, res)
         return res
 
     def post(self, url, data=None, json=None):
@@ -40,12 +42,17 @@ class Requests:
         """
         if data:
             res=self.s.post(self.url + url, data=data, timeout=self.timeout)
+            deal_with_res(data, res)
             return res
 
         if json:
             res=self.s.post(self.url + url, json=json, timeout=self.timeout)
+            deal_with_res(json, res)
             return res
-        return self.s.post(self.url + url, timeout=self.timeout)
+
+        res = self.s.post(self.url + url, timeout=self.timeout)
+        deal_with_res(json, res)
+        return res
 
     def put(self, url, data=None, json=None):
         """
