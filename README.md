@@ -1,10 +1,4 @@
 # Pytest + Request + Allure
-1. YAML for configuration
-2. Django + DRF to write API for CRUD
-3. Mock
-4. HttpRunner
-
-## How I apply this skill in my daily work
 1. Utilized Python 3, Pytest, Requests, and Allure to build from scratch the department's interface automation testing.
 2. Added and improved the proportion of automated interface test cases, accounting for over 30% of all department interfaces.
 3. Detailed design of automated test cases, using Pytest parameterization to enhance case scenarios, covering every interface's conditional branch process, aiming for high test coverage.
