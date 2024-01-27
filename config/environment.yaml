@@ -7,3 +7,10 @@ user:
     password: 1234abcd!
 
 url: http://www.tcpjwtester.top
+
+mysql:
+  db: test1
+  host: test1
+  password: 1234
+  port: 4090
+  user: clu
